@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-telescope/telescope.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   -- Tabs
   use {'akinsho/bufferline.nvim'}
@@ -40,6 +41,10 @@ return require('packer').startup(function(use)
       'neovim/nvim-lspconfig',
   }
 
+  -- DAP
+  use {'mfussenegger/nvim-dap'}
+  use {'rcarriga/nvim-dap-ui'}
+  use {'ravenxrz/DAPInstall.nvim'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
