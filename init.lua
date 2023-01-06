@@ -1,15 +1,6 @@
-require "user.packer"
-require "user.set"
-require "user.remap"
-require "user.hover"
-require "user.lualine"
-require "user.nvim-terminal"
-require "user.nvim-tree"
-require "user.trouble"
-require "user.indentline"
-require "user.bufferline"
-require "user.dap"
-require "user.setup"
+require "core.keymaps"
+require "core.plugins"
+require "core.plugin_config"
 
 -- Create Q as alias for 'qa!'
 vim.cmd [[command! Q qa!]]

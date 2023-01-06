@@ -29,7 +29,7 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
@@ -40,6 +40,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = {120}
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Disable some providers
 vim.g.loaded_python3_provider = 0
