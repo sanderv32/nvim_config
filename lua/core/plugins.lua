@@ -21,6 +21,11 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-telescope/telescope.nvim'
 
+  -- Tabs
+  use {'akinsho/bufferline.nvim'}
+  use {'moll/vim-bbye'}
+
+
   -- completions
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
