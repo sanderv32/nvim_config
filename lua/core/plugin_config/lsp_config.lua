@@ -10,8 +10,7 @@ local plugins = {
     "cmp_nvim_lsp",
 }
 
-for _, i in ipairs(plugins)
-do
+for _, i in ipairs(plugins) do
     if not check_installed(i) then
         return
     end

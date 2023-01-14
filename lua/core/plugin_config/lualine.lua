@@ -9,7 +9,7 @@ lualine.setup {
         theme = 'onedark',
     },
     sections = {
-        lualine_a = {
+        lualine_c = {
             {
                 'filename',
                 path = 1,

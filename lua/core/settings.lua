@@ -6,6 +6,7 @@ vim.opt.splitbelow = true -- force all horizontal splits to go below current win
 vim.opt.splitright = true -- force all vertical splits to go to the right of current window
 vim.opt.completeopt = {"menuone", "noselect"} -- mostly just for cmp
 vim.opt.guifont = "monospace:h17"
+vim.opt.showmode = false
 
 vim.opt.nu = true
 vim.opt.relativenumber = false
@@ -44,3 +45,6 @@ vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
+
+-- Autocmd
+vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]

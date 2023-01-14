@@ -10,4 +10,7 @@ treesitter_configs.setup {
     highlight = {
         enable = true,
     },
+    rainbow = {
+        enable = true
+    }
 }

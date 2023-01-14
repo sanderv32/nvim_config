@@ -19,11 +19,11 @@ dap_install.config("python", {})
 dap_install.config("codelldb", {})
 
 dapui.setup {
-    layouts = {{
-        elements = {'scopes', 'breakpoints'},
+    layouts = { {
+        elements = { 'scopes', 'breakpoints' },
         size = 0.25,
         position = "right"
-    }}
+    } }
 }
 
 vim.fn.sign_define("DapBreakpoint", {
@@ -60,11 +60,11 @@ dap.adapters.codelldb = {
     port = 13000,
     executable = {
         command = '/Users/averhaar/.vscode-oss/extensions/vadimcn.vscode-lldb-1.8.1/adapter/codelldb',
-        args = {'--port', '13000'}
+        args = { '--port', '13000' }
     }
 }
 
-dap.configurations.rust = {{
+dap.configurations.rust = { {
     name = 'Launch Debug',
     type = 'codelldb',
     request = 'launch',
@@ -76,5 +76,4 @@ dap.configurations.rust = {{
     args = {},
     initCommand = {},
     runInTerminal = false
-}}
-
+} }
