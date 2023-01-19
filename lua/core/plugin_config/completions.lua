@@ -26,5 +26,17 @@ cmp.setup({
         { name = 'luasnip' },
     }, {
         { name = 'buffer' },
+        { name = 'crates' },
     }),
 })
+
+local _ = require('null-ls')
+require('crates').setup {
+    popup = {
+        autofocus = true,
+    },
+    null_ls = {
+        enabled = true,
+        name = "crates.nvim",
+    },
+}

@@ -48,3 +48,4 @@ vim.g.loaded_perl_provider = 0
 
 -- Autocmd
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd FileType terraform setlocal tabstop=2 softtabstop=2 shiftwidth=2]]

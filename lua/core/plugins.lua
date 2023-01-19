@@ -27,6 +27,8 @@ return require('packer').startup(
             use 'numToStr/Comment.nvim'
             use 'simrat39/symbols-outline.nvim'
             use 'p00f/nvim-ts-rainbow'
+            use 'jose-elias-alvarez/null-ls.nvim'
+            use 'akinsho/toggleterm.nvim'
 
             -- Tabs
             use 'akinsho/bufferline.nvim'
@@ -38,6 +40,7 @@ return require('packer').startup(
             use 'L3MON4D3/LuaSnip'
             use 'saadparwaiz1/cmp_luasnip'
             use 'rafamadriz/friendly-snippets'
+            use 'saecki/crates.nvim'
 
             -- LSP
             use {

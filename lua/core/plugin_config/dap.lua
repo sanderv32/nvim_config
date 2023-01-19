@@ -58,6 +58,9 @@ dap.adapters.codelldb = {
     name = 'codelldb',
     host = '127.0.0.1',
     port = 13000,
+    options = {
+    initialize_timeout_sec = 10,
+    },
     executable = {
         command = '/Users/averhaar/.vscode-oss/extensions/vadimcn.vscode-lldb-1.8.1/adapter/codelldb',
         args = { '--port', '13000' }
