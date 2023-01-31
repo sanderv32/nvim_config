@@ -9,6 +9,8 @@ keymap('n', '<leader><right>', '<C-w><right>', opts)
 keymap('n', '<leader><up>', '<C-w><up>', opts)
 keymap('n', '<leader><down>', '<C-w><down>', opts)
 keymap('n', '<leader>r', function() vim.o.relativenumber = not vim.o.relativenumber; end)
+keymap('n', '<leader><tab>', '<cmd>bnext<cr>', opts)
+keymap('n', '<leader><s-tab>', '<cmd>bprev<cr>', opts)
 
 -- DAP
 keymap("n", "<F32>", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts) -- Ctrl-F8
