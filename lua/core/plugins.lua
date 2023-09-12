@@ -20,7 +20,7 @@ return require('packer').startup(
             use 'nvim-tree/nvim-tree.lua'
             use 'nvim-tree/nvim-web-devicons'
             use 'nvim-lualine/lualine.nvim'
-            use 'nvim-treesitter/nvim-treesitter'
+            use ({'nvim-treesitter/nvim-treesitter'}, run == ":TSUpdate")
             use 'nvim-telescope/telescope.nvim'
             use 'lukas-reineke/indent-blankline.nvim'
             use 'arkav/lualine-lsp-progress'

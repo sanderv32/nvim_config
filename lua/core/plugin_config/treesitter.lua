@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 treesitter_configs.setup {
-    ensure_installed = { "c", "lua", "rust", "vim" },
+    ensure_installed = { "c", "lua", "rust", "vim", "pioasm" },
     sync_install = false,
     auto_install = true,
     highlight = {
@@ -12,5 +12,11 @@ treesitter_configs.setup {
     },
     rainbow = {
         enable = true
+    }
+}
+
+vim.filetype.add {
+    extension = {
+        pio = "pioasm",
     }
 }
