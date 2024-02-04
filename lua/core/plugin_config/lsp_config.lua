@@ -20,7 +20,8 @@ require("mason").setup()
 require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls",
-        "rust_analyzer"
+        "rust_analyzer",
+        "terraformls"
     }
 })
 
@@ -44,3 +45,21 @@ require("lspconfig").rust_analyzer.setup {
     capabilities = capabilities,
     on_attach = on_attach
 }
+
+require("lspconfig").pyright.setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+    filetypes = {"python"}
+}
+
+require("lspconfig").terraformls.setup {
+    capabilities = capabilities,
+    on_attach = on_attach
+}
+
+require("sg").setup {
+    enable_cody = true,
+    event = "InsertEnter",
+    on_attach = on_attach
+}
+

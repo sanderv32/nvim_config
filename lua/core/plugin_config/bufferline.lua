@@ -9,8 +9,10 @@ bufferline.setup {
         right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
         offsets = {{
             filetype = "NvimTree",
-            text = "",
-            padding = 1
+            text = "File Explorer",
+            text_align = "left",
+            separator = true,
+            padding = 0
         }},
         separator_style = "thick" -- | "thick" | "thin" | { 'any', 'any' },
     },

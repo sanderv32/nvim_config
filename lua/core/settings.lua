@@ -44,12 +44,18 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = {120}
 
 -- Disable some providers
-vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
 
+-- Enable some providers
+vim.g.loaded_python3_provider = 1
+
+-- Enable SOPS debugging
+vim.g.nvim_sops_debug = true
+
 -- Autocmd
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
 vim.cmd [[autocmd FileType terraform setlocal tabstop=2 softtabstop=2 shiftwidth=2]]
+vim.cmd [[autocmd BufWritePost *.tf silent exec "!terraform fmt %"]]
 vim.cmd [[autocmd CursorHold * checktime]]

@@ -20,7 +20,7 @@ return require('packer').startup(
             use 'nvim-tree/nvim-tree.lua'
             use 'nvim-tree/nvim-web-devicons'
             use 'nvim-lualine/lualine.nvim'
-            use ({'nvim-treesitter/nvim-treesitter'}, run == ":TSUpdate")
+            use({ 'nvim-treesitter/nvim-treesitter' }, run == ":TSUpdate")
             use 'nvim-telescope/telescope.nvim'
             use 'lukas-reineke/indent-blankline.nvim'
             use 'arkav/lualine-lsp-progress'
@@ -29,10 +29,20 @@ return require('packer').startup(
             use 'p00f/nvim-ts-rainbow'
             use 'jose-elias-alvarez/null-ls.nvim'
             use 'akinsho/toggleterm.nvim'
+            use 'lucidph3nx/nvim-sops'
+            use 'theprimeagen/harpoon'
+            use 'tpope/vim-fugitive'
+            use {
+                'folke/todo-comments.nvim',
+                opts = {}
+            }
+
+            -- Cody
+            use { 'sourcegraph/sg.nvim', run = 'nvim -l build/init.lua' }
 
             -- Tabs
-            use 'akinsho/bufferline.nvim'
-            use 'moll/vim-bbye'
+            -- use 'akinsho/bufferline.nvim'
+            -- use 'moll/vim-bbye'
 
             -- completions
             use 'hrsh7th/nvim-cmp'

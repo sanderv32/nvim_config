@@ -21,8 +21,9 @@ cmp.setup({
         end,
     },
     sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
+        { name = 'cody' },
         { name = 'luasnip' },
+        { name = 'nvim_lsp' },
     }, {
         { name = 'buffer' },
         { name = 'crates' },
@@ -39,3 +40,4 @@ require('crates').setup {
         name = "crates.nvim",
     },
 }
+
