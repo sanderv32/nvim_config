@@ -6,7 +6,7 @@ if not status_ok then
 end
 
 onedark.setup {
-    style = "warm",
+    style = "darker",
     transparant = true,
 }
 onedark.load()
