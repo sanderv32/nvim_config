@@ -30,3 +30,5 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#700010" })
+
+vim.g.nvim_sops_debug = true
