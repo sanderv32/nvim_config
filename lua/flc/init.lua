@@ -36,6 +36,15 @@ autocmd({"BufWritePre"}, {
     command = [[%s/\s\+$//e]],
 })
 
+autocmd('BufWritePost', {
+    group = FLCGroup,
+    pattern = "*.tf",
+    callback = function(b)
+        local opts = { buffer = b.buf }
+        vim.cmd([[silent exec "!terraform fmt %"]], opts)
+    end
+})
+
 autocmd('LspAttach', {
     group = FLCGroup,
     callback = function(e)
