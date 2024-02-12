@@ -15,7 +15,7 @@ return {
                     },
                     alacritty = {
                         enabled = true,
-                        font = "24",
+                        font = "18",
                     }
                 }
             }
