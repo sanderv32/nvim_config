@@ -39,3 +39,11 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/flc/packer.lua<CR>
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- Cursor keybinding to make life easier
+vim.keymap.set("n", "<leader>h", "<C-w><left>")
+vim.keymap.set("n", "<leader>l", "<C-w><right>")
+vim.keymap.set("n", "<leader>k", "<C-w><up>")
+vim.keymap.set("n", "<leader>j", "<C-w><down>")
+vim.keymap.set("n", "<leader><tab>", "<cmd>bnext<CR>")
+vim.keymap.set("n", "<leader><s-tab>", "<cmd>bprev<CR>")
