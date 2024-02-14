@@ -45,6 +45,16 @@ autocmd('BufWritePost', {
     end
 })
 
+autocmd('BufEnter', {
+    group = FLCGroup,
+    pattern = "*.tf",
+    callback = function()
+        vim.opt.tabstop = 2
+        vim.opt.softtabstop = 2
+        vim.opt.shiftwidth = 2
+    end
+})
+
 autocmd('LspAttach', {
     group = FLCGroup,
     callback = function(e)

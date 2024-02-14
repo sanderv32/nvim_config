@@ -30,4 +30,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
 
+vim.opt.mouse = ""
+
 vim.g.nvim_sops_debug = true
