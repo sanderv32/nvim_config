@@ -29,7 +29,8 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
+vim.opt.cursorline = true
 
-vim.opt.mouse = ""
+vim.opt.mouse = "a"
 
 vim.g.nvim_sops_debug = true
